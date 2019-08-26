@@ -1,0 +1,20 @@
+{
+  "name": "yts-movieql",
+  "version": "1.0.0",
+  "description": "YTS Movie API with GraphQL (Nomad Coder's Course)",
+  "main": "index.js",
+  "repository": "https://github.com/josh3021/yts-movieql",
+  "author": "Seonghwan Cho",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.2",
+    "node-fetch": "^2.6.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  }
+}
