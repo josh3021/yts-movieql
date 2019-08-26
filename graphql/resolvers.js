@@ -1,5 +1,7 @@
 import {
-  getMovies
+  getMovies,
+  getMovie,
+  movieSuggestions
 } from "./db";
 
 const resolvers = {
@@ -10,7 +12,17 @@ const resolvers = {
     }) => getMovies({
       limit,
       minRating
-    })
+    }),
+    movie: (_, {
+      id
+    }) => getMovie({
+      id
+    }),
+    movieSuggestions: (_, {
+      id
+    }) => movieSuggestions({
+      id
+    }),
   }
 }
 
